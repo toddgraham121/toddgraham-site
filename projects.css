@@ -1,0 +1,35 @@
+#projects {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 414px) {
+  #projects {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+  #projects {
+    grid-template-columns: 49% 49%;
+  }
+}
+
+@media (min-width: 768px) {
+  #projects {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+.figure {
+  border: 5px solid black;
+  padding: 10px;
+}
+
+.figure:hover {
+  border: 5px solid blue;
+  /* background-color: lightblue; */
+  /* color: var(--white); */
+}
