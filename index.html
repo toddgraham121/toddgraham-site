@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,38 +31,101 @@
     ></script>
     <title>Todd Graham</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-      <a class="navbar-brand" href="index.html">Todd Graham</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#nav-items"
-        aria-controls="#nav-items"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <a class="navbar-brand" href="index.html">Todd Graham</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#nav-items"
+      aria-controls="#nav-items"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="nav-items">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactForm.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <div class="collapse navbar-collapse" id="nav-items">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactForm.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body id="background">
     <main>
-      <section class="billboard py-5 text-center container">
+        <section class="billboard pt-4 text-center container">
+        <div class="row py-lg-3">
+          <div class="col mx-auto">
+            <h1 class="fw-light">Todd Graham</h1>
+            <p class="lead text-muted">
+              Researcher and Software Engineer
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="shadow-lg rounded bg-white">
+          <div class="about py-4 px-4 mt-1">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="mb-3">About Me</h2>
+                <p>
+                  Hello! I’m Todd Graham and I am currently working on Master's in
+                  Computer Science at Portland State University. I have a Bachelor's
+                  of Science in Biology and Mathematics from University of Portland.
+                  Currently, I am working as a Graduate Research Assistant focusing
+                  on using Data Science to analyze United States election data.
+                  Additionally, I manage a research laboratory at Oregon Health &
+                  Science University that is studying pre-hospital hemorrhage
+                  control and resuscitation for traumatic injuries. I am very
+                  interested in the intersection of computer science and medical
+                  research; as my career progresses I'd like to continue to
+                  contribute and innovate in both of the fields.
+                </p>
+              </div>
+              <div class="col-md-5 offset-md-1">
+                <h2 class="mb-3">Contact Information</h2>
+                <div class="row mt-2">
+                  <div class="col-sm-4">
+                    <div class="pb-1">Phone</div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="pb-1 text-secondary">(503) 887-4221</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="pb-1">Email</div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="pb-1 text-secondary"><a href = "mailto: toddgraham121@gmail.com">toddgraham121@gmail.com</a></div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="pb-1">GitHub</div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="pb-1 text-secondary"><a href="https://github.com/toddgraham121">toddgraham121</a></div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="pb-1">Location</div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="pb-1 text-secondary">
+                      Portland, OR
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- <section class="billboard py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Todd Graham</h1>
@@ -91,7 +155,7 @@
             <h3 class="mb2">Contact</h3>
           </div>
         </div>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
