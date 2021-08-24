@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="stylesheet" href="contactForm.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -67,40 +67,48 @@
         </ul>
       </div>
     </nav>
-
+    <br />
     <main>
-      <section class="billboard py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Todd Graham</h1>
-            <p class="lead text-muted">
-              My name is Todd Graham and I am currently working on Master's in
-              Computer Science at Portland State University. I have a Bachelor's
-              of Science in Biology and Mathematics from University of Portland.
-              Currently, I am working as a Graduate Research Assistant focusing
-              on using Data Science to analyze United States election data.
-              Additionally, I manage a research laboratory at Oregon Health &
-              Science University that is studying pre-hospital hemorrhage
-              control and resuscitation for traumatic injuries. I am very
-              interested in the intersection of computer science and medical
-              research; as my career progresses I'd like to continue to
-              contribute and innovate in both of the fields.
-            </p>
-          </div>
+      <form action="" class="form">
+        <h1>Contact Form</h1>
+        <br />
+        <div>
+          <label for="name" class="form-element">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Doe"
+            class="user-input"
+          />
         </div>
-      </section>
-
-      <div class="container">
-        <div class="row">
-          <div class="col col-9">
-            <h3 class="mb2">About Me</h3>
-          </div>
-          <div class="col col-3">
-            <h3 class="mb2">Contact</h3>
-          </div>
+        <br />
+        <div>
+          <label for="email" class="form-element">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            class="user-input"
+          />
         </div>
-      </div>
+        <br />
+        <div>
+          <label for="message-body" class="form-element">Message Body:</label>
+          <textarea
+            class="form-control message"
+            id="message-body"
+            placeholder="Say hi!"
+            rows="3"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Submit" class="btn btn-primary" />
+          <input type="reset" value="Reset" class="btn btn-secondary" />
+        </div>
+      </form>
     </main>
-    <footer>Footer</footer>
   </body>
 </html>
