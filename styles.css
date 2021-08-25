@@ -1,7 +1,59 @@
+html {
+  height: 100%;
+}
+
 #background {
   background-color: #f4fcff;
+  position: relative;
+  min-height: 100%;
 }
 
 #contact-link {
   color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.footer-title,
+.nav-link {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: gray;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+@media (min-width: 414px) {
+  .footer-title {
+    float: left;
+  }
+  .footer-nav {
+    float: right;
+  }
+
+  #background {
+    padding-bottom: 75px;
+  }
+
+  footer {
+    height: 60px;
+  }
+}
+
+@media (max-width: 414px) {
+  #background {
+    padding-bottom: 130px;
+  }
+
+  footer {
+    height: 115px;
+  }
 }
