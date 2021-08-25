@@ -23,12 +23,12 @@ footer {
 .nav-link {
   font-size: 1.25rem;
   line-height: 2.5rem;
-  color: gray;
+  color: black;
   padding: 0;
 }
 
 .nav-link:hover {
-  color: black;
+  text-shadow: 2px #00cfff;
 }
 
 @media (min-width: 414px) {
