@@ -31,8 +31,15 @@
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+  height: 100%;
 }
 
 #card:hover {
   border: 2px solid #00bfff;
+}
+
+.project-card,
+.project-card:hover {
+  color: black;
+  text-decoration: none;
 }

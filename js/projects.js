@@ -1,9 +1,13 @@
 let projects = document.getElementById("projects");
 
 const addProjectToDom = (project) => {
+  let projectLink = document.createElement("a");
+  projectLink.setAttribute("href", `${project.githubRepo}`);
+  projectLink.setAttribute("class", "project-card");
   let projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card`);
-  projectCard.setAttribute("class", "shadow rounded");
+  projectCard.setAttribute("class", "card shadow rounded");
+  projectLink.append(projectCard);
   let horizLine = document.createElement("hr");
   let projectName = document.createElement("h3");
   projectName.setAttribute("class", "title");
@@ -16,16 +20,15 @@ const addProjectToDom = (project) => {
   projectCard.append(description);
   let link = document.createElement("a");
   link.setAttribute("href", `${project.githubRepo}`);
-  link.setAttribute("class", "repo-link");
+  link.setAttribute("class", "stretched-link repo-link");
   link.innerHTML = "More information";
-  projectCard.appendChild(link);
-  projects.append(projectCard);
+  projectCard.append(link);
+  projects.append(projectLink);
 };
 
 function fetchData(data) {
   try {
     data.projects.forEach((project) => {
-      console.log(project);
       addProjectToDom(project);
     });
   } catch (error) {
@@ -94,5 +97,4 @@ let projectInformation = {
   ],
 };
 
-console.log(projectInformation);
 fetchData(projectInformation);
