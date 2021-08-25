@@ -1,13 +1,13 @@
 .form {
   padding: 25px 15px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   margin: 0 auto;
 }
 
 h1 {
   text-align: center;
-  color: black;
+  color: #000000;
 }
 
 .form-element {
@@ -27,7 +27,7 @@ h1 {
   height: 2.5em;
   width: 49%;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 @media (max-width: 414px) {

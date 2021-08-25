@@ -14,21 +14,21 @@ html {
 }
 
 #contact-link {
-  color: black;
+  color: #000000;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .footer-title,
 .nav-link {
   font-size: 1.25rem;
   line-height: 2.5rem;
-  color: black;
+  color: #000000;
   padding: 0;
 }
 

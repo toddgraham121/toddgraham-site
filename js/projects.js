@@ -19,8 +19,7 @@ const addProjectToDom = (project) => {
   description.innerText = `${project.description}`;
   projectCard.append(description);
   let link = document.createElement("a");
-  link.setAttribute("href", `${project.githubRepo}`);
-  link.setAttribute("class", "stretched-link repo-link");
+  link.setAttribute("id", "repo-link");
   link.innerHTML = "More information";
   projectCard.append(link);
   projects.append(projectLink);

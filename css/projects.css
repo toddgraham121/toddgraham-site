@@ -5,8 +5,13 @@
   justify-content: center;
 }
 
-.repo-link {
-  color: darkblue;
+#repo-link {
+  color: #00008b;
+}
+
+#repo-link:hover {
+  color: #4c4cad;
+  text-decoration: underline;
 }
 
 @media (max-width: 414px) {
@@ -28,7 +33,7 @@
 }
 
 #card {
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 5px;
   padding: 10px;
   height: 100%;
@@ -40,6 +45,6 @@
 
 .project-card,
 .project-card:hover {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
