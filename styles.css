@@ -8,6 +8,11 @@ html {
   min-height: 100%;
 }
 
+#navbar-link-active,
+#navbar-link:hover {
+  text-decoration: underline #00cfff;
+}
+
 #contact-link {
   color: black;
 }
