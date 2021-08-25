@@ -25,13 +25,9 @@ h1 {
   width: 100%;
 }
 
-.newsletter-radio {
-  border: none;
-}
-
-.btn {
+#btn {
   height: 2.5em;
   width: 49%;
-  border-width: 1px;
   border-radius: 5px;
+  border: 1px solid black;
 }

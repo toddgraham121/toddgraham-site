@@ -32,40 +32,40 @@
     ></script>
     <title>Contact Me</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-      <a class="navbar-brand" href="index.html">Todd Graham</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#nav-items"
-        aria-controls="#nav-items"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+    <a class="navbar-brand" href="index.html">Todd Graham</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#nav-items"
+      aria-controls="#nav-items"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="nav-items">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactForm.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="nav-items">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactForm.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body id="background">
     <br />
     <main>
-      <form action="" class="form">
-        <h1>Contact Form</h1>
-        <br />
+      <form action="" class="form bg-white">
+        <h1>Contact Me</h1>
+        <hr />
         <div>
           <label for="name" class="form-element">Name:</label>
           <input
@@ -99,10 +99,21 @@
         </div>
         <br />
         <div>
-          <input type="submit" value="Submit" class="btn btn-primary" />
-          <input type="reset" value="Reset" class="btn btn-secondary" />
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary"
+            id="btn"
+          />
+          <input
+            type="reset"
+            value="Reset"
+            class="btn btn-secondary"
+            id="btn"
+          />
         </div>
       </form>
     </main>
   </body>
+  <!-- <footer>Todd Graham</footer> -->
 </html>
