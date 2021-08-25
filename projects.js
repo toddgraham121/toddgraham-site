@@ -2,16 +2,23 @@ let projects = document.getElementById("projects");
 
 const addProjectToDom = (project) => {
   let projectCard = document.createElement("div");
-  projectCard.setAttribute("id", `${project.title}`);
-  projectCard.setAttribute("class", "figure");
+  projectCard.setAttribute("id", `card`);
+  projectCard.setAttribute("class", "shadow rounded");
+  let horizLine = document.createElement("hr");
   let projectName = document.createElement("h3");
   projectName.setAttribute("class", "title");
   projectName.innerText = `${project.title}`;
   projectCard.append(projectName);
+  projectCard.append(horizLine);
   let description = document.createElement("p");
   description.setAttribute("class", "description");
   description.innerText = `${project.description}`;
   projectCard.append(description);
+  let link = document.createElement("a");
+  link.setAttribute("href", `${project.githubRepo}`);
+  link.setAttribute("class", "repo-link");
+  link.innerHTML = "More information";
+  projectCard.appendChild(link);
   projects.append(projectCard);
 };
 
@@ -67,12 +74,22 @@ let projectInformation = {
     },
     {
       title: "Data Science for Election Verification",
-      class: "Not Applicable",
+      class: "Not connected to a class",
       description:
         "In this project, I helped develop tools for consolidation and analysis of raw election results from the most reliable sources -- the election agencies themselves.",
       idProject: "5",
       category: "data science",
       githubRepo: "https://github.com/ElectionDataAnalysis/electiondata",
+    },
+    {
+      title: "Voice User Interface for Personal Site",
+      class: "Voice Assistants",
+      description:
+        "In this project, I created a voice user interface in Dialogflow to interact with the data that is displayed on this personal site. Please click on this card to find a link to the user interface.",
+      idProject: "6",
+      category: "user interface",
+      githubRepo:
+        "https://bot.dialogflow.com/99e7db9f-eed5-4bf4-a130-c593222ef46c",
     },
   ],
 };
