@@ -20,7 +20,7 @@ const addProjectToDom = (project) => {
   projectCard.append(description);
   let link = document.createElement("a");
   link.setAttribute("id", "repo-link");
-  link.innerHTML = "More information";
+  link.innerHTML = "Code";
   projectCard.append(link);
   projects.append(projectLink);
 };
